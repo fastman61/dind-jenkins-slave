@@ -1,5 +1,5 @@
-USER=benhall
-IMAGE=dind-jenkins-agent:v2
+USER=aliyildiz
+IMAGE=dind-jenkins-agent:v1
 
 .PHONY: build push
 
