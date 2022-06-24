@@ -6,7 +6,7 @@ IMAGE=dind-jenkins-agent:v1
 default: build
 
 build:
-	docker build -t $(USER)/$(IMAGE) .
+	docker build -t $(USER)/$(IMAGE) . --platform=linux/amd64
 
 debug:
 	docker run -it $(USER)/$(IMAGE) bash
